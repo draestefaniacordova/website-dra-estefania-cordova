@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Medicina estética personalizada con la Dra. Estefanía Córdova. Armonía, cuidado y resultados naturales. Agenda una valoración.">
+<meta name="theme-color" content="#f8f5ef">
+<title>Dra. Estefanía Córdova | Medicina Estética</title>
+<style>
+:root{--ivory:#f1eee8;--sand:#f1eee8;--gold:#6d819e;--gold-dark:#631632;--ink:#222943;--muted:#716d63;--white:#fff;--line:#e3dbcf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400} .topline{height:4px;background:linear-gradient(90deg,#e9dfcf,var(--gold),#e9dfcf)}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 7%;gap:24px;background:rgba(250,248,243,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:13px}.brand-logo{display:block;width:230px;height:74px;object-fit:cover;object-position:center}.footer-logo{display:block;width:190px;height:65px;object-fit:cover;object-position:center}.monogram{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold-dark);font-family:Georgia,serif;font-size:19px}.brandname{font-family:Georgia,serif;font-size:17px;letter-spacing:.02em;line-height:1.2}.brandname small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+nav{display:flex;align-items:center;gap:25px;font-size:12px;letter-spacing:.06em;color:#514d44}nav a:hover{color:var(--gold-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold-dark);color:white;padding:14px 22px;border:1px solid var(--gold-dark);font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:.2s;cursor:pointer}.btn:hover{background:#786039}.btn-outline{background:transparent;color:var(--ink);border-color:var(--gold)}.btn-outline:hover{background:var(--sand);color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:610px;padding:44px 7% 56px;gap:6%;align-items:center}.eyebrow{color:var(--gold-dark);font-size:10px;letter-spacing:.23em;text-transform:uppercase;margin:0 0 22px}.hero h1{font-size:clamp(43px,5.4vw,72px);line-height:1.06;letter-spacing:-.035em;margin:0 0 24px;max-width:620px}.hero h1 em{color:var(--gold-dark);font-weight:400}.hero p{max-width:470px;color:var(--muted);font-size:15px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:center;color:var(--muted);font-size:11px;letter-spacing:.03em}.dot{height:5px;width:5px;border-radius:50%;background:var(--gold)}
+.hero-art{min-height:480px;position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#eee5d8,#f8f3eb 55%,#e4d4bd);overflow:hidden}.hero-art:before{content:"";position:absolute;width:72%;height:88%;border:1px solid rgba(109,129,158,.65);border-radius:48% 48% 3px 3px;top:7%;left:14%}.hero-art:after{content:"";position:absolute;width:55%;height:72%;border:1px solid rgba(109,129,158,.45);border-radius:48% 48% 2px 2px;top:15%;left:22.5%}.profile-placeholder{position:relative;z-index:1;text-align:center;max-width:230px;color:#76664c}.profile-placeholder svg{width:145px;height:190px;display:block;margin:0 auto 20px;opacity:.75}.profile-placeholder span{font-family:Georgia,serif;font-size:23px;display:block}.profile-placeholder small{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;margin-top:9px}.art-caption{position:absolute;z-index:2;bottom:24px;right:22px;background:var(--ivory);padding:12px 16px;font-family:Georgia,serif;font-style:italic;color:var(--gold-dark);font-size:14px}
+.trustbar{padding:23px 7%;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#f4efe7;text-align:center}.trustbar div{padding:0 15px;border-right:1px solid #dcd1c0}.trustbar div:last-child{border:0}.trustbar strong{display:block;font-family:Georgia,serif;font-size:19px;font-weight:400}.trustbar span{font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+section{padding:88px 7%}.section-head{max-width:660px;margin:0 auto 42px;text-align:center}.section-head h2{font-size:clamp(32px,4vw,47px);line-height:1.15;margin:0 0 16px}.section-head p{color:var(--muted);font-size:14px;margin:0}.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:28px 25px 30px;border:1px solid var(--line);background:var(--ivory);min-height:220px}.service .num{color:var(--gold-dark);font-family:Georgia,serif;font-size:15px}.service h3{font-family:Georgia,serif;font-weight:400;font-size:24px;line-height:1.2;margin:23px 0 12px}.service p{color:var(--muted);font-size:13px;margin:0}.service a{display:inline-block;margin-top:20px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.approach{display:grid;grid-template-columns:.9fr 1.1fr;gap:9%;align-items:center;background:var(--sand)}.approach-art{min-height:410px;background:#e2d4c0;display:grid;place-items:center;position:relative;overflow:hidden}.approach-art .circle{width:72%;aspect-ratio:1;border:1px solid #b89b6a;border-radius:50%;display:grid;place-items:center;text-align:center;color:#786344}.circle span{font-family:Georgia,serif;font-size:clamp(28px,4vw,48px);line-height:1.1}.circle small{display:block;font-family:Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:9px;margin-top:12px}.approach h2{font-size:clamp(33px,4vw,48px);line-height:1.15;margin:0 0 20px}.approach p{color:#666055;font-size:14px}.principles{list-style:none;padding:0;margin:27px 0}.principles li{padding:13px 0;border-bottom:1px solid #d2c4af;font-size:13px}.principles li:before{content:"✦";color:var(--gold-dark);margin-right:12px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.about h2{font-size:clamp(34px,4vw,48px);line-height:1.12;margin:0 0 20px}.about p{font-size:14px;color:var(--muted)}.about-card{padding:36px;background:#f1e9dc;border-left:2px solid var(--gold)}.about-card .serif{font-size:27px;line-height:1.35}.about-card p{font-size:12px;margin-bottom:0}
+.faq{background:#fff}.faq-list{max-width:780px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:20px 0}.faq summary{cursor:pointer;font-family:Georgia,serif;font-size:20px;list-style:none;display:flex;justify-content:space-between;gap:20px}.faq summary:after{content:"+";font-family:Arial;color:var(--gold-dark)}.faq details[open] summary:after{content:"−"}.faq details p{color:var(--muted);font-size:13px;max-width:680px}
+.contact{background:#222943;color:#f1eee8;display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start}.contact .eyebrow{color:#d2b77f}.contact h2{font-size:clamp(36px,4.4vw,53px);line-height:1.12;margin:0 0 20px}.contact p{color:#d0cabe;font-size:14px}.contact-form{background:#f8f5ef;color:var(--ink);padding:28px}.contact-form label{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:13px;border:1px solid #ddd3c4;background:white;font:13px Arial;margin-bottom:16px;border-radius:0}.contact-form textarea{min-height:85px;resize:vertical}.contact-form .btn{width:100%}.form-note{font-size:10px;color:var(--muted);margin-top:12px}
+footer{padding:26px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10px;color:var(--muted);letter-spacing:.04em}.wa-float{position:fixed;right:20px;bottom:20px;z-index:20;border-radius:30px;box-shadow:0 5px 22px #0002}
+@media(max-width:850px){.brand-logo{width:195px;height:64px}.footer-logo{width:165px;height:58px}header{padding:16px 5%;flex-wrap:wrap}nav{order:3;width:100%;overflow:auto;gap:18px;padding-top:8px}header>.btn{padding:11px 13px}.hero{grid-template-columns:1fr;padding:45px 6%;gap:35px}.hero-art{min-height:390px}.trustbar{padding:20px 4%}.trustbar strong{font-size:16px}.trustbar span{font-size:8px}.service-grid{grid-template-columns:1fr 1fr}.approach,.about,.contact{grid-template-columns:1fr;gap:35px}.approach-art{min-height:320px}section{padding:65px 6%}}
+@media(max-width:520px){.brand-logo{width:165px;height:55px}.footer-logo{width:150px;height:52px}.brandname{font-size:14px}.brandname small{font-size:8px}.monogram{width:37px;height:37px}.hero h1{font-size:45px}.hero-art{min-height:330px}.trustbar{grid-template-columns:1fr;gap:15px}.trustbar div{border-right:0;border-bottom:1px solid #dcd1c0;padding-bottom:13px}.trustbar div:last-child{border:0;padding-bottom:0}.service-grid{grid-template-columns:1fr}.service{min-height:auto}.section-head{text-align:left}.contact-form{padding:22px}.wa-float{right:12px;bottom:12px}.wa-float .btn{padding:12px 14px}}
+
+@font-face{font-family:'TBJ Neuetra';src:url('assets/fonts/TBJNeuetra-Thin.otf') format('opentype');font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:'TBJ Neuetra';src:url('assets/fonts/TBJNeuetra-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'TBJ Neuetra';src:url('assets/fonts/TBJNeuetra-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'TBJ Neuetra';src:url('assets/fonts/TBJNeuetra-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap}
+
+/* Tipografía corporativa TBJ Neuetra aplicada a toda la web */
+body,button,input,select,textarea{font-family:'TBJ Neuetra',Arial,sans-serif}
+.serif,.brandname,.service h3,.section-head h2,.approach h2,.about h2,.about-card .serif,.faq summary,.hero h1,.profile-placeholder span,.art-caption,.trustbar strong{font-family:'TBJ Neuetra',Arial,sans-serif}
+
+/* Recursos gráficos originales de la marca: aplicados como fondos y acentos */
+.services{background-color:#f1eee8;background-image:linear-gradient(rgba(241,238,232,.94),rgba(241,238,232,.94)),url('assets/graficos/textura-marfil.jpg');background-size:cover;background-position:center}
+.hero-art{background-image:linear-gradient(rgba(241,238,232,.22),rgba(241,238,232,.22)),url('assets/graficos/suero-rosado.png');background-size:cover;background-position:center}
+.profile-placeholder{background:rgba(241,238,232,.76);padding:18px 12px;backdrop-filter:blur(2px)}
+.approach-art{background-image:linear-gradient(rgba(241,238,232,.28),rgba(241,238,232,.28)),url('assets/graficos/macro-azul-02.jpg');background-size:cover;background-position:center}
+.approach-art .circle{background:rgba(241,238,232,.78);backdrop-filter:blur(2px)}
+.about-card{background-color:#f1eee8;background-image:linear-gradient(rgba(241,238,232,.86),rgba(241,238,232,.86)),url('assets/graficos/composicion-abstracta-02.jpeg');background-size:cover;background-position:center}
+.signature-gallery{padding:32px 7%;background:#f1eee8}
+.signature-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:auto}
+.signature-gallery figure{margin:0;position:relative;height:220px;overflow:hidden;background:#e8e3dd}
+.signature-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.signature-gallery figure:hover img{transform:scale(1.035)}
+.signature-gallery figcaption{position:absolute;left:18px;bottom:15px;color:#fff;font-family:'TBJ Neuetra',Arial,sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 1px 8px #222943}
+@media(max-width:650px){.signature-gallery{padding:24px 6%}.signature-gallery-grid{grid-template-columns:1fr;gap:12px}.signature-gallery figure{height:190px}}
+
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <a class="brand" href="#inicio" aria-label="Dra. Estefanía Córdova, inicio">
+    <img class="brand-logo" src="assets/logo-estefania-magenta.png" alt="Dra. Estefanía Córdova · Medicina estética">
+  </a>
+  <nav aria-label="Navegación principal">
+    <a href="#filosofia">Filosofía</a><a href="#tratamientos">Tratamientos</a><a href="#doctora">La doctora</a><a href="#preguntas">Preguntas frecuentes</a>
+  </nav>
+  <a class="btn" href="#citas">Agendar valoración</a>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <p class="eyebrow">Medicina estética · Quito, Ecuador</p>
+    <h1 class="serif">Tu belleza,<br><em>en armonía</em><br>contigo.</h1>
+    <p>Un enfoque personalizado de medicina estética que prioriza tu bienestar, la naturalidad y el equilibrio de tus rasgos. Porque verte bien también es sentirte tú.</p>
+    <div class="actions"><a class="btn" href="#citas">Reserva tu valoración <span aria-hidden="true">&nbsp;↗</span></a><a class="btn btn-outline" href="#tratamientos">Conoce los tratamientos</a></div>
+    <div class="hero-note"><span class="dot"></span> Atención médica personalizada · Planes según tus necesidades</div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Espacio reservado para la fotografía profesional de la Dra. Estefanía Córdova">
+    <div class="profile-placeholder" id="portraitPlaceholder" style="display:none">
+      <svg viewBox="0 0 160 205" fill="none" aria-hidden="true"><path d="M80 22c-25 0-39 21-39 49 0 17 5 31 15 41-2 19-13 30-30 37-11 5-17 15-17 28h142c0-13-6-23-17-28-17-7-28-18-30-37 10-10 15-24 15-41 0-28-14-49-39-49Z" stroke="#6d819e" stroke-width="1.2"/><path d="M47 78c8-8 17-8 25-2M88 76c8-6 17-6 25 2M67 106c8 6 18 6 26 0M80 82v15" stroke="#6d819e" stroke-width="1.2" stroke-linecap="round"/><path d="M29 160c16-11 33-15 51-15s35 4 51 15" stroke="#6d819e" stroke-width="1.2"/></svg>
+      <span>Tu esencia, primero.</span><small>Espacio para tu fotografía profesional</small>
+    </div>
+    <img id="doctorPortrait" src="assets/dra-estefania-cordova.jpg" alt="Dra. Estefanía Córdova, medicina estética" style="display:block;position:absolute;z-index:1;width:82%;height:94%;top:3%;left:9%;object-fit:cover;object-position:center 18%;border-radius:48% 48% 2px 2px;">
+    <div class="art-caption">Naturalmente tú</div>
+  </div>
+</section>
+<div class="trustbar"><div><strong class="serif">Enfoque personalizado</strong><span>Tu rostro, tus objetivos</span></div><div><strong class="serif">Criterio médico</strong><span>Valoración individual</span></div><div><strong class="serif">Belleza natural</strong><span>Armonía sin excesos</span></div></div>
+<section class="services" id="tratamientos">
+  <div class="section-head"><p class="eyebrow">Tratamientos</p><h2 class="serif">Cuidado experto, pensado para ti.</h2><p>Cada piel y cada rostro cuentan una historia diferente. Empezamos escuchándote y diseñamos un plan acorde con tu valoración médica.</p></div>
+  <div class="service-grid">
+    <article class="service"><span class="num">01 / Expresión</span><h3>Toxina botulínica</h3><p>Tratamiento personalizado para suavizar líneas de expresión y mantener una apariencia fresca y natural, según indicación médica.</p><a href="#citas">Consultar valoración ↗</a></article>
+    <article class="service"><span class="num">02 / Armonía</span><h3>Ácido hialurónico</h3><p>Opciones de armonización facial y definición de contornos, priorizando la proporción, la seguridad y la naturalidad.</p><a href="#citas">Consultar valoración ↗</a></article>
+    <article class="service"><span class="num">03 / Calidad de piel</span><h3>Skinboosters e hidratación</h3><p>Alternativas para mejorar la hidratación y la apariencia de la piel, seleccionadas de acuerdo con tus necesidades.</p><a href="#citas">Consultar valoración ↗</a></article>
+    <article class="service"><span class="num">04 / Regeneración</span><h3>Bioestimulación</h3><p>Tratamientos orientados a estimular procesos de regeneración y apoyar la calidad cutánea cuando estén indicados.</p><a href="#citas">Consultar valoración ↗</a></article>
+    <article class="service"><span class="num">05 / Renovación</span><h3>Peelings médicos</h3><p>Protocolos personalizados para textura, luminosidad y tono de la piel, tras evaluar fototipo, sensibilidad y antecedentes.</p><a href="#citas">Consultar valoración ↗</a></article>
+    <article class="service"><span class="num">06 / Plan integral</span><h3>Rejuvenecimiento facial</h3><p>Una estrategia global que combina evaluación, prevención y opciones de tratamiento según tus objetivos y características.</p><a href="#citas">Consultar valoración ↗</a></article>
+  </div>
+</section>
+
+<section class="signature-gallery" aria-label="Elementos visuales de la marca">
+  <div class="signature-gallery-grid">
+    <figure><img src="assets/graficos/gotas-rubi.png" alt="Composición abstracta de gotas en tonos rubí"><figcaption>Armonía</figcaption></figure>
+    <figure><img src="assets/graficos/burbujas-doradas.png" alt="Composición abstracta de burbujas doradas"><figcaption>Precisión</figcaption></figure>
+    <figure><img src="assets/graficos/macro-azul-01.jpg" alt="Composición molecular en tonos azules"><figcaption>Ciencia</figcaption></figure>
+  </div>
+</section>
+
+<section class="approach" id="filosofia">
+  <div class="approach-art"><div class="circle"><div><span class="serif">Menos exceso.<br>Más esencia.</span><small>La belleza está en el equilibrio</small></div></div></div>
+  <div><p class="eyebrow">Mi filosofía</p><h2 class="serif">La mejor versión de ti sigue siendo tú.</h2><p>Creo en una medicina estética que acompaña, no transforma tu identidad. El objetivo es cuidar tu piel y armonizar tus rasgos respetando tu expresión, tus proporciones y tus expectativas.</p><ul class="principles"><li>Escucha activa y objetivos realistas</li><li>Valoración médica antes de cada tratamiento</li><li>Plan individualizado y seguimiento</li><li>Información clara sobre beneficios, límites y riesgos</li></ul><a class="btn" href="#citas">Hablemos de tus objetivos</a></div>
+</section>
+<section class="about" id="doctora">
+  <div><p class="eyebrow">Conoce a tu doctora</p><h2 class="serif">Dra. Estefanía Córdova</h2><p>Mi compromiso es ofrecerte una atención cercana, profesional y personalizada. Cada consulta es un espacio para conversar sobre tus objetivos, resolver tus dudas y valorar qué opciones pueden ser adecuadas para ti.</p><p>La seguridad, la comunicación honesta y el respeto por la naturalidad guían mi forma de entender la medicina estética.</p><a class="btn btn-outline" href="#citas">Agenda una valoración</a></div>
+  <aside class="about-card"><div class="serif">“No se trata de cambiar quién eres, sino de cuidar aquello que te hace sentir bien contigo.”</div><p>DRA. ESTEFANÍA CÓRDOVA · MEDICINA ESTÉTICA</p></aside>
+</section>
+<section class="faq" id="preguntas">
+  <div class="section-head"><p class="eyebrow">Antes de tu cita</p><h2 class="serif">Preguntas frecuentes</h2><p>Queremos que tomes decisiones informadas y te sientas acompañada durante el proceso.</p></div>
+  <div class="faq-list">
+    <details><summary>¿Cómo sé qué tratamiento necesito?</summary><p>El primer paso es una valoración médica. Revisaremos tus objetivos, antecedentes, características de la piel y expectativas para conversar sobre las alternativas adecuadas. No todos los tratamientos son apropiados para todas las personas.</p></details>
+    <details><summary>¿Los resultados se ven naturales?</summary><p>La planificación busca respetar tus rasgos y proporciones. Los resultados varían según la persona, el tratamiento, la técnica y la respuesta individual; no es posible garantizar un resultado específico.</p></details>
+    <details><summary>¿Puedo agendar si todavía no sé qué tratamiento elegir?</summary><p>Por supuesto. Puedes reservar una valoración para conversar sobre tus inquietudes y conocer las opciones antes de tomar una decisión.</p></details>
+    <details><summary>¿Qué debo hacer antes de un procedimiento?</summary><p>Sigue las indicaciones que recibas durante la valoración. Informa sobre medicamentos, alergias, antecedentes médicos, embarazo o lactancia cuando corresponda y tratamientos estéticos previos.</p></details>
+  </div>
+</section>
+<section class="contact" id="citas">
+  <div><p class="eyebrow">Tu próximo paso</p><h2 class="serif">Empecemos por escucharte.</h2><p>Cuéntame qué te gustaría cuidar o mejorar y coordinemos una valoración médica personalizada.</p><p><strong>Ubicación:</strong> Quito y Cumbayá, Ecuador</p><p><strong>Atención:</strong> Con cita previa</p><p style="font-size:11px">La indicación de cualquier procedimiento depende de una valoración médica individual.</p></div>
+  <form class="contact-form" id="bookingForm">
+    <label for="nombre">Tu nombre</label><input id="nombre" name="nombre" autocomplete="name" placeholder="¿Cómo te llamas?" required>
+    <label for="interes">¿Qué te gustaría consultar?</label><select id="interes" name="interes" required><option value="">Selecciona una opción</option><option>Valoración facial</option><option>Toxina botulínica</option><option>Ácido hialurónico</option><option>Calidad e hidratación de la piel</option><option>Peeling médico</option><option>Rejuvenecimiento facial</option><option>Quiero orientación</option></select>
+    <label for="horario">Horario de preferencia (opcional)</label><input id="horario" name="horario" placeholder="Ej. tardes entre semana">
+    <label for="mensaje">Cuéntame un poco más (opcional)</label><textarea id="mensaje" name="mensaje" placeholder="¿Cuál es tu principal objetivo?"></textarea>
+    <button class="btn" type="submit">Solicitar cita por WhatsApp ↗</button>
+    <p class="form-note">Al continuar, se abrirá WhatsApp con tu mensaje preparado para que puedas revisarlo antes de enviarlo. No incluyas información médica sensible en este formulario.</p>
+  </form>
+</section>
+</main>
+<footer><img class="footer-logo" src="assets/logo-estefania-azul.png" alt="Dra. Estefanía Córdova · Medicina estética"><span>© <span id="year"></span> · Atención personalizada · Quito, Ecuador</span><a href="#inicio">Volver arriba ↑</a></footer>
+
+<section class="contact-confirmed" aria-label="Contacto y ubicación" style="padding:42px 7%;background:#f1eee8;text-align:center">
+  <p style="color:#631632;letter-spacing:.14em;text-transform:uppercase;font-size:12px">Contacto y citas</p>
+  <h2 style="font-family:'TBJ Neuetra',Arial,sans-serif;color:#222943;margin:8px 0 18px">Atención en Quito y Cumbayá</h2>
+  <p style="color:#222943;margin:0 0 8px"><strong>Consultorio Quito:</strong> Av. de los Shyris y Suecia, Edificio Argentum, oficina 206.</p>
+  <p style="color:#222943;margin:0 0 8px"><strong>Consultorio Cumbayá:</strong> Av. Pampite y Simón Valenzuela, Edificio Yoo Cumbayá, Clínica Da Vinci, piso 2.</p>
+  <p style="color:#222943;margin:0 0 18px">WhatsApp: <a href="https://wa.me/593986773577" style="color:#631632;text-decoration:underline">+593 98 677 3577</a></p>
+  <a href="https://wa.me/593986773577" style="display:inline-block;background:#631632;color:#fff;padding:13px 24px;text-decoration:none;border-radius:3px">Solicitar una cita por WhatsApp</a>
+</section>
+
+<a class="wa-float btn" id="quickWhatsapp" href="#citas">Consultar por WhatsApp ↗</a>
+<script>
+/* WhatsApp profesional configurado: Ecuador +593 98 677 3577. */
+const WHATSAPP_NUMBER = "593986773577";
+document.getElementById("year").textContent = new Date().getFullYear();
+function openWhatsApp(message){
+  if(!/^593\d{9}$/.test(WHATSAPP_NUMBER)){
+    alert("No se pudo validar el número de WhatsApp. Revisa la configuración antes de publicar.");
+    return;
+  }
+  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank","noopener");
+}
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const f=new FormData(this);
+  let msg="Hola, Dra. Estefanía. Me gustaría solicitar una valoración.\nNombre: "+f.get("nombre")+"\nConsulta: "+f.get("interes");
+  if(f.get("horario"))msg+="\nHorario preferido: "+f.get("horario");
+  if(f.get("mensaje"))msg+="\nComentario: "+f.get("mensaje");
+  openWhatsApp(msg);
+});
+document.getElementById("quickWhatsapp").addEventListener("click",function(e){
+  if(!/^593\d{9}$/.test(WHATSAPP_NUMBER)){return;}
+  e.preventDefault();openWhatsApp("Hola, Dra. Estefanía. Me gustaría recibir información y agendar una valoración.");
+});
+</script>
+</body>
+</html>
